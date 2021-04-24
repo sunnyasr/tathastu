@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.tathastushop.app"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 13
+        versionName "1.1.11"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    bundle {
+        language {
+            enableSplit = true
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Volley
+    implementation 'com.android.volley:volley:1.1.1'
+    //Run time permission
+    implementation 'com.karumi:dexter:5.0.0'
+    //Responsive ui
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Multiwave
+    implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-alpha-1'
+    //Tasty Toast
+    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    //Recyclerview Animation
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.7'
+    //Diagonal Layout
+    implementation 'com.github.florent37:diagonallayout:1.0.9'
+    //PhotoView
+    implementation 'com.github.chrisbanes:PhotoView:1.3.1'
+    // Waiting Indicator
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //Elegant Button
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    //Shimmer Layout
+    implementation 'com.ethanhua:skeleton:1.1.2'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+    //RazorPay
+    implementation 'com.razorpay:checkout:1.5.5'
+
+    //Toggel Buttons
+    implementation 'com.nex3z:toggle-button-group:1.1.9'
+
+    //Banner Slider
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+
+    //Paykun Gateway
+//    implementation 'com.paykun.sdk:paykun-checkout-lib:1.1.6'
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.7.3'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.7.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.7.3'
+
+}

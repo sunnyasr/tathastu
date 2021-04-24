@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#890e4f</color>
+    <color name="colorPrimaryDark">#660a3b</color>
+    <color name="colorAccent">#1A1919</color>
+    <color name="blue_original">#242960</color>
+    <color name="blue_light">#1e73b4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#232a60</color>
+    <color name="yellow">#f5d427</color>
+    <color name="green">#45bc62</color>
+    <color name="greenDark">#126c28</color>
+    <color name="orange">#eaad43</color>
+    <color name="orangeDark">#b67709</color>
+    <color name="bluedark">#2f333f</color>
+    <color name="bluelight">#49acd5</color>
+    <color name="grey">#e8ecef</color>
+    <color name="kprogresshud_default_color">#b1000000</color>
+    <color name="kprogresshud_grey_color">#449E9E9E</color>
+    <color name="tealIcon">#1AB5B3</color>
+    <color name="grey_trans">#80535151</color>
+    <color name="greyDark">#585757</color>
+    <color name="red">#ee534f</color>
+
+    <color name="colorFontGreyDark">#333333</color>
+    <color name="colorFontGreyLight">#666666</color>
+    <color name="colorLine">#dfdfdf</color>
+    <color name="colorFontGreen">#388e3c</color>
+    <color name="colorFontRed">#F96650</color>
+
+    <color name="shimmer_color_for_image">#55efefef</color>
+    <color name="black">#000</color>
+</resources>

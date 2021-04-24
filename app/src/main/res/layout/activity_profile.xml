@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activities.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary">
+
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/custom_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout_head">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/curve_profile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photo_layout">
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="40dp"
+                        android:id="@+id/header_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="144dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="239dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tv_mobile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="9876543210"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/tv_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/expletus_sans_semibold"
+                                    android:gravity="center"
+                                    android:text="Wallet Amount\n12551"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/expletus_sans_semibold"
+                                    android:gravity="center"
+                                    android:text="Member ID\n12551"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/header_layout"
+                        android:layout_marginBottom="30dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Name"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_person_grey_24dp"
+                                android:drawablePadding="10dp"
+                                android:hint="Name"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Email"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_person_grey_24dp"
+                                android:drawablePadding="10dp"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Aadhaar Number"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_adhar_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_adhar_no"
+                                android:drawablePadding="10dp"
+                                android:hint="Aadhaar Number"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Account Number"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_acno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_ac_no"
+                                android:drawablePadding="10dp"
+                                android:hint="Account Number"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Account Holder Name"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_acname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_username"
+                                android:drawablePadding="10dp"
+                                android:hint="Account Holder Name"
+                                android:singleLine="true"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="IFSC Code"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_ifsc_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_ifsc_code"
+                                android:drawablePadding="10dp"
+                                android:hint="IFSC Code"
+                                android:singleLine="true"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Branch"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_branch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_bank"
+                                android:drawablePadding="10dp"
+                                android:hint="Branch"
+                                android:singleLine="true"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Address"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_caddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_address"
+                                android:drawablePadding="10dp"
+                                android:hint="Address"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/near_loc"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_near_loc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_address"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/near_loc"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/pincode"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_address"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/pincode"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/district"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_district"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_address"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/district"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/state"
+                                android:textColor="@color/greyDark"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/profile_et_style"
+                                android:drawableLeft="@drawable/ic_address"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/state"
+                                android:textColor="#595959"
+                                android:textColorHint="#b78e8f8f" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Aadhar Photo"
+                            android:textColor="@color/greyDark"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <Button
+                                android:id="@+id/btn_preview"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_change_pass_style"
+                                android:text="@string/preview"
+                                android:textColor="@color/white" />
+
+                            <Button
+                                android:id="@+id/btn_change"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_change_pass_style2"
+                                android:text="@string/change_adharphoto"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/btn_update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:background="@drawable/btn_change_pass_style"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="Update"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/photo_layout"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true">
+
+
+                    <com.tathastushop.app.App.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="15dp"
+                        android:padding="4dp"
+                        android:src="@drawable/tree_user_grey"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="3dp" />
+
+                    <ImageButton
+                        android:id="@+id/btn_update_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/profile_camera_bg_style"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_camera_24dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

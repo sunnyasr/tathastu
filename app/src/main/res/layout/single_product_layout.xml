@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_notification_layout"
+    android:layout_width="match_parent"
+    android:layout_height="525dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginBottom="1dp"
+    android:clickable="false"
+    android:elevation="1dp"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_mian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="01dp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/product_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_product"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="2dp"
+                android:maxLength="40"
+                android:text="Samsung Washing Machine fully automatic"
+                android:textColor="@color/greyDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_desc"
+                android:layout_marginTop="-2dp"
+                android:paddingLeft="3dp">
+
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_buy"-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:background="#4CAF50"-->
+<!--                    android:text="Buy"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="10sp" />-->
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

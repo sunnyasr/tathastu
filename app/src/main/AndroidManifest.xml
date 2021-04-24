@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tathastushop.app">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.ProjectionActivity"></activity>
+        <activity
+            android:name=".Activities.RefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PopProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MyOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.WalletHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TransactionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TransRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LevelIncomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LevelFinalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LevelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PopUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PaymentInnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BuyInnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.OrderSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ProductsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_Eh4ZREJTMA53WC"
+            />
+    </application>
+
+</manifest>

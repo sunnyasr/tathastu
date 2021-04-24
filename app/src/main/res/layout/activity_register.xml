@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/custom_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout_head">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+
+                <EditText
+                    android:id="@+id/et_id_ref"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_username"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/sop_id"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/sop_id"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_user_grey"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/name"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/name"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/address"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/address"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_district"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/district"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/district"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/state"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/state"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_pincode"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@drawable/login_layout_focus_style"-->
+<!--                    android:drawableLeft="@drawable/ic_address"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:hint="@string/pincode"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_pincode"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="@drawable/login_text_focus_style"-->
+<!--                    android:paddingLeft="7dp"-->
+<!--                    android:paddingTop="3dp"-->
+<!--                    android:paddingRight="7dp"-->
+<!--                    android:paddingBottom="3dp"-->
+<!--                    android:text="@string/pincode"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_near_loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_near_location"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/near_loc"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_near_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/near_loc"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/mobile"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/mobile"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/email"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_ac_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_user_grey"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/ac_name"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/ac_name"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_ac_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_ac_no"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/ac_no"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_ac_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/ac_no"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_ifsc_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_ifsc_code"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/ifsc_code"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_ifsc_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/ifsc_code"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_bankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_bank"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/bank_name"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/bank_name"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_bank"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/branch"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/branch"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_adhar_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_adhar_no"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/adhar_no"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/adhar_no"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_suponser"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_green_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_hand" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_suponser"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_suponser"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:capitalize="sentences"-->
+            <!--                    android:hint="SponsorId"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_person"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_blue_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_person_white_24dp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_fullname"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_person"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:capitalize="sentences"-->
+            <!--                    android:hint="Full Name"-->
+            <!--                    android:inputType="textEmailAddress"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_person3"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_orange_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_lock_white_24dp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_password"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_person3"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:hint="Password"-->
+            <!--                    android:inputType="textEmailAddress"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_person4"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_green_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_phone_android_white_24dp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_mobile"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_person4"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:hint="Mobile"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:maxLength="10"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_cardno"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_blue_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_account_white_24dp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_id_no"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_cardno"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:hint="ID Card Number"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_person6"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_orange_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_account_white_24dp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_account_number"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_person6"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:hint="Account Number"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_person7"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_green_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_person_white_24dp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_account_name"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_person7"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:hint="Account Name"-->
+            <!--                    android:inputType="textEmailAddress"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_marginTop="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/iv_person11"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:background="@drawable/level_edittext_bg_orange_style"-->
+            <!--                    android:padding="6dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/ic_address_white_24dp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_caddress"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@id/iv_person11"-->
+            <!--                    android:background="@drawable/et_level_bg_style"-->
+            <!--                    android:hint="Address"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:textColor="#5c5c5c"-->
+            <!--                    android:textColorHint="#e85c5b5b" />-->
+            <!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_choose_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/iv_proof"
+                    android:background="@drawable/et_bg_style2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/aadhaar_card" />
+
+                <ImageView
+                    android:id="@+id/iv_proof"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/success_icon"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="@string/optional"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_layout_focus_style"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_text_focus_style"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/password"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:textColor="@color/greyDark" />
+
+            <Button
+                android:id="@+id/btn_addMember"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_change_pass_style"
+                android:fontFamily="@font/expletus_sans_semibold"
+                android:text="Add Member"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
